@@ -25,7 +25,7 @@ jobs:
         working-directory: launcher
         run: |
           chmod +x gradlew
-          ./gradlew --no-daemon testReleaseUnitTest lintRelease assembleRelease
+          ./gradlew --no-daemon -PlauncherApplicationId=com.gathin.tvhome.vpn testReleaseUnitTest lintRelease assembleRelease
 
       - name: Check APK size
         run: |
